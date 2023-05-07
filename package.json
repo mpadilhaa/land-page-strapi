@@ -70,5 +70,16 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.0.8",
     "webpack": "^5.82.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/*.{js,jsx,tx,tsx}",
+      "!<rootDir>/src/styles*.{js,jsx,tx,tsx}",
+      "!<rootDir>/src/**/*mock*.{js,jsx,tx,tsx}",
+      "!<rootDir>/**/stories.{js,jsx,tx,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ]
   }
 }

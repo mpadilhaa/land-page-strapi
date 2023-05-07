@@ -4,9 +4,8 @@ import { Heading } from "./Heading";
 export default {
   title: "Heading",
   component: Heading,
-  args: {
-    children: "não sei",
-  },
+  children: "O texto está escuro",
+  light: false,
   argTypes: {
     children: { type: "string" },
   },
